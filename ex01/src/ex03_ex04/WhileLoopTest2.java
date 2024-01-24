@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class WhileLoopTest2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//LoopTest 7번문제
+		
 
 		Scanner scanner = new Scanner(System.in);
 

@@ -3,7 +3,7 @@ package ex03_ex04;
 public class SwitchExpressionTest1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Loop Test 2번문제
 
 		String grade = "B";
 		int score1 = 0;
@@ -21,7 +21,5 @@ public class SwitchExpressionTest1 {
 		}
 		}
 		System.out.println(score1);
-
 	}
-
 }

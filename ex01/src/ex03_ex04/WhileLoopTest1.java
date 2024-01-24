@@ -3,7 +3,8 @@ package ex03_ex04;
 public class WhileLoopTest1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//LoopTest 4번문제
+		
 		
 		
 		while(true) {

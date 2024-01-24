@@ -3,7 +3,7 @@ package ex03_ex04;
 public class ForLoopTest1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//LoopTest 3번문제
 		
 		int sum = 0;
 		for (int i=1; i<=100; i++){
