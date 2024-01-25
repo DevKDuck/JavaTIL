@@ -88,6 +88,8 @@ public class StringRefTest1 {
 		String board = "번호,제목,내용,글쓴이";
 		String[] arr = board.split(","); 
 		
+		System.out.println(arr[0]);
+		
 	}
 
 }
