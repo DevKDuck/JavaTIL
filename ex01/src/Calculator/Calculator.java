@@ -19,6 +19,12 @@ public class Calculator {
       powerStatus = true;
       System.out.println("전원을 켭니다.");
    }
+   
+   //컴파일러에서 동작할때는 다음과 같이 자기자신으로 바꿈
+//   public void powerOn(final Calculator this) {
+//	      this.powerStatus = true;
+//	      System.out.println("전원을 켭니다.");
+//	   }
 
    //리턴값이 없는 메소드 선언
    public void powerOff() {
@@ -63,6 +69,7 @@ public class Calculator {
       return result; //리턴값 지정;
    }
    
+   //일반화한 함수
    public int plus2(int ... arr) throws Exception {
       if (false == powerStatus) {
          throw new Exception("전원을 켜시요");
