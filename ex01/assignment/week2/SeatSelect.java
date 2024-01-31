@@ -25,7 +25,7 @@ public class SeatSelect {
 	
 	//출력
 	void printSeat(String name, int seat) {
-		System.out.println(name + "님은" + seat + "번 자리입니다.");
+		System.out.println(name + "님은 " + seat + "번 자리입니다.");
 	}
 	
 
@@ -41,4 +41,5 @@ public class SeatSelect {
 			count += 1;
 		}
 	}
+	
 }
