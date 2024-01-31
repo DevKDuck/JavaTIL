@@ -5,55 +5,40 @@ import java.util.Scanner;
 public class SeatSelect {
 	int[] arr = new int[18];
 	int[] result = new int[18];
-	String[] nameArr = new String[18];
-
 	static int count = 0;
 
+	//arr인덱스 값 초기화
 	SeatSelect() {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = i + 1;
 		}
 	}
+	
+	//자리뽑기
+	void selectSeat(String name) {
 
-	void assign(String name) {
-		int idx = selectSeat();
+		final int idx = (int)(Math.random()*(arr.length - count));
 		result[count] = arr[idx];
 		arr[idx] = arr[arr.length - 1 - count];
-		printSeat(result[count], name);
+		printSeat(name, result[count]);
 	}
-
-	int selectSeat() {
-		int remainingSeats = arr.length - count;
-		int idx = (int) (Math.random() * remainingSeats);
-		for (int i = 0; i < count; i++) {
-			if (result[i] == arr[idx]) {
-				idx = (idx + 1) % remainingSeats;
-				i = -1; // Reset to check from the beginning
-			}
-		}
-		return idx;
+	
+	//출력
+	void printSeat(String name, int seat) {
+		System.out.println(name + "님은" + seat + "번 자리입니다.");
 	}
-
-	void printSeat(int idx, String name) {
-
-		System.out.println(name + "님은" + idx + "번째 자리입니다.");
-
-	}
+	
 
 	public static void main(String[] args) {
 	
-
+		Scanner sc = new Scanner(System.in);
 		SeatSelect s = new SeatSelect();
-
+		
 		while (count < 18) {
-
-			Scanner sc = new Scanner(System.in);
 			String str = sc.next();
 
-			s.assign(str);
+			s.selectSeat(str);
 			count += 1;
 		}
-
 	}
-
 }
