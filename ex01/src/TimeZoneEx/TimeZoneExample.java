@@ -6,7 +6,7 @@ import java.util.TimeZone;
 public class TimeZoneExample {
 
 	public static void main(String[] args) {
-		TimeZone timeZone = TimeZone.getTimeZone("America/Los_Angeles");
+		TimeZone timeZone = TimeZone.getTimeZone("Asia/Seoul");
 		Calendar now = Calendar.getInstance(timeZone);
 		
 		int amPm = now.get(Calendar.AM_PM);
@@ -27,6 +27,13 @@ public class TimeZoneExample {
 		System.out.print(hour + "시 ");
 		System.out.print(minute + "분 ");
 		System.out.println(second + "초 ");
+		
+		
+		//사용가능한  ID 확인하는 방법
+		String[] availableIDs = TimeZone.getAvailableIDs();
+		for(String id: availableIDs) {
+			System.out.println(id);
+		}
 
 	}
 
