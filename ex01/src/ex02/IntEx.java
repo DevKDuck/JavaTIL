@@ -3,8 +3,11 @@ package ex02;
 public class IntEx {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		String s1 = "ab";
+		String s2 = "ab";
+		
+		
+		
 	}
 
 }

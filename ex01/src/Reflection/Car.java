@@ -24,6 +24,10 @@ public class Car {
    public String getOwner() { return owner; }
    public void setOwner(String owner) { this.owner = owner; }
    
+   public void run() {
+	   System.out.println("자동차가 달린다");
+   }
+   
    @Override
    public String toString() {
       return "Car [model=" + model + ", owner=" + owner + "]";

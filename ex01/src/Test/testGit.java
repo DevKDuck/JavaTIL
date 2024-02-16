@@ -1,9 +1,13 @@
 package Test;
 
-public class testGit {
+public class testGit{
+	public static void main (String[]args) {
+		A a = new A();
 
-	public static void main(String[] args) {	
-		System.out.println("git username, email 변경.");
+		a.method1();
 	}
-
+	
 }
+
+
+

@@ -62,44 +62,44 @@ public class Board {
    }
    
    //해쉬값을 id 기준으로 생성
-//   @Override
-//   public int hashCode() {
-//      return Objects.hash(subject);
-//   }
+   @Override
+   public int hashCode() {
+      return Objects.hash(subject);
+   }
    
    
    
 //   @Override
-//   public boolean equals(Object obj) {
-//      if (this == obj)
-//         return true;
-//      if (obj == null)
-//         return false;
-//      if (getClass() != obj.getClass())
-//         return false;
-//      Board other = (Board) obj;
-//      return id == other.id;
-//   }
+   public boolean equals(Object obj) {
+      if (this == obj)
+         return true;
+      if (obj == null)
+         return false;
+      if (getClass() != obj.getClass())
+         return false;
+      Board other = (Board) obj;
+      return id == other.id;
+   }
 
 
  @Override 
  public String toString() { return "Board [id=" + id + ", subject="
  + subject + ", content=" + content + ", writer=" + writer + "]"; }
-@Override
-public int hashCode() {
-	return Objects.hash(subject);
-}
-@Override
-public boolean equals(Object obj) {
-	if (this == obj)
-		return true;
-	if (obj == null)
-		return false;
-	if (getClass() != obj.getClass())
-		return false;
-	Board other = (Board) obj;
-	return Objects.equals(subject, other.subject);
-}
+//@Override
+//public int hashCode() {
+//	return Objects.hash(subject);
+//}
+//@Override
+//public boolean equals(Object obj) {
+//	if (this == obj)
+//		return true;
+//	if (obj == null)
+//		return false;
+//	if (getClass() != obj.getClass())
+//		return false;
+//	Board other = (Board) obj;
+//	return Objects.equals(subject, other.subject);
+//}
 
    
 }

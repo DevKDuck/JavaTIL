@@ -4,7 +4,7 @@ public class Example {
 	private static Student[] students = { new Student("홍길동", 90, 96), new Student("신용권", 95, 93) };
 
 	
-	private static double avg(Function<Student> function) {
+	static double avg(Function<Student> function) {
 		int sum = 0;
 		
 		for (Student student: students) {
